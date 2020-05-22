@@ -1,0 +1,6 @@
+﻿  백문 문제풀이(for문).c
+C:\Users\박종두\source\repos\백준 문제 풀이(for문)\백준 문제 풀이(for문)\백문 문제풀이(for문).c(90,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 'scanf' 선언을 참조하십시오.
+C:\Users\박종두\source\repos\백준 문제 풀이(for문)\백준 문제 풀이(for문)\백문 문제풀이(for문).c(93,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 'scanf' 선언을 참조하십시오.
+  백준 문제 풀이(for문).vcxproj -> C:\Users\박종두\source\repos\백준 문제 풀이(for문)\Debug\백준 문제 풀이(for문).exe
