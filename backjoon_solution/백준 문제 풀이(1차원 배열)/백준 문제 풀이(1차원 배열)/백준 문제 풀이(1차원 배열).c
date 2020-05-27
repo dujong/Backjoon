@@ -95,16 +95,15 @@ int main() {
 
 	printf("%.2f", avg/N);*/
 
-	int N, count = 0,sum=0;
+	/*int N, count = 0,sum=0;		OX퀴즈
 	char c[80];
-	int point[10] = { 0, };
-	scanf("%d", &N);
+	scanf("%d",&N);
 
 	for (int i = 0; i < N; i++) {
-		scanf("%s", c);
+		scanf("%s",c);
 
-		for (int j = 0; j < 80; j++) {
-			if (c[i] == 'O' || c[i] == 'o') {
+		for (int j = 0; j < strlen(c); j++) {
+			if (c[j] == 'O') {
 				count++;
 				sum += count;
 			}
@@ -112,12 +111,33 @@ int main() {
 				count = 0;
 
 		}
-		point[i] = sum;
-	}
+		printf("%d\n", sum);
+		count =0 ,sum = 0;
+	}*/
+
+	/*int N, M, sum = 0;		평균 넘은사람 구하기
+	int count = 0;
+	int arr[1000] = { 0, };
+	double rate;
+
+	scanf("%d",&N);
 
 	for (int i = 0; i < N; i++) {
-		printf("%d\n", point[i]);
-	}
+		scanf("%d",&M);
 
+		for (int j = 0; j < M; j++) {
+			scanf("%d",&arr[j]);
+			sum += arr[j];
+		}
+		sum /= M;
+
+		for (int j = 0; j < M; j++) {
+			if (sum < arr[j])
+				count++;
+		}
+		rate = (double)count / M * 100;
+		printf("%.3lf%%\n",rate);
+	}
+	*/
 	return 0;
 }
