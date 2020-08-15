@@ -47,6 +47,10 @@ int  main(void) {
 
 	(sum == 0) ? printf("-1") : printf("%d\n%d", sum, min);
 	return 0;*/
+
+	//소수 구하기
+/*
+
 	static int arr[1000001] = { 1,1,1, };
 
 	int M, N;
@@ -74,6 +78,45 @@ int  main(void) {
 	}
 
 	return 0;
+	*/
 
 
+	// 골드바흐의 추측
+
+	int n;
+	int N;
+	int i, j;
+	int i2, j2;
+	int number;
+	static int arr[10001] = {0,};
+
+	for (int i = 2; i < 10001 / i; i++)
+		for (int j = i * i; j < 10001; j += i)
+			if (j % i == 0)
+				arr[j] = 1;
+
+	scanf("%d", &n);
+
+	while (n--) {
+
+		scanf("%d", &N);
+
+		for (i = N / 2; i > 1; i--) {
+			if (arr[i] == 1) continue;
+			for (j = N / 2; j <= N; j++) {
+				if (arr[j] == 1) continue;
+
+				if (i + j == N) {
+					i2 = i;
+					j2 = j;
+					i = 0;
+					j = 10002;
+				}
+			}
+		}
+
+		printf("%d %d\n", i2, j2);
+	}
+
+	
 }
