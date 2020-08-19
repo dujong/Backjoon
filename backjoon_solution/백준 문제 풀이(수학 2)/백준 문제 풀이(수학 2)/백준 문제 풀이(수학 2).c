@@ -82,7 +82,7 @@ int  main(void) {
 
 
 	// 골드바흐의 추측
-
+	/*
 	int n;
 	int N;
 	int i, j;
@@ -116,7 +116,23 @@ int  main(void) {
 		}
 
 		printf("%d %d\n", i2, j2);
+	}*/
+
+	// 직사각형에서 탈출
+
+	int x, y, w, h;
+
+	scanf("%d %d %d %d", &x, &y, &w, &h);
+
+	if ((0 <= w && w <= 1000) && (0 <= h && h <= 1000)
+		&& (1 <= x && x <= w - 1) && (1 <= y && y <= h - 1)) {
+
+		x = (x > w - x) ? (w - x) : x;
+		y = (y > (h - y)) ? (h - y) : y;
+
+		printf("%d", (x > y) ? y : x);
+
 	}
 
-	
+
 }
