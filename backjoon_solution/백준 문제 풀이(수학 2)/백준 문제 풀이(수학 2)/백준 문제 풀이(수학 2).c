@@ -135,7 +135,7 @@ int  main(void) {
 	}*/
 
 	// 네 번째 점
-
+/*
 	int x[4], y[4];
 
 	scanf("%d %d", &x[0], &y[0]);
@@ -165,6 +165,27 @@ int  main(void) {
 	}
 
 	
-	printf("%d %d", x[3], y[3]);
+	printf("%d %d", x[3], y[3]); */
+
+	// 직각 삼각형	
+
+	int Heru, Ausar, Auset;
+
+	while (1) {
+		scanf("%d %d %d", &Auset, &Ausar, &Heru);
+
+		if (Heru == 0 && Ausar == 0 && Auset == 0)
+			break;
+
+		Heru = Heru * Heru;
+		Ausar = Ausar * Ausar;
+		Auset = Auset * Auset;
+
+		if (Heru == (Ausar + Auset) || Ausar == (Heru + Auset) 
+			|| Auset == (Heru + Ausar))
+			printf("right\n");
+		else
+			printf("wrong\n");
+	}
 
 }
