@@ -120,7 +120,7 @@ int  main(void) {
 
 	// 직사각형에서 탈출
 
-	int x, y, w, h;
+	/*int x, y, w, h;
 
 	scanf("%d %d %d %d", &x, &y, &w, &h);
 
@@ -132,7 +132,39 @@ int  main(void) {
 
 		printf("%d", (x > y) ? y : x);
 
+	}*/
+
+	// 네 번째 점
+
+	int x[4], y[4];
+
+	scanf("%d %d", &x[0], &y[0]);
+	scanf("%d %d", &x[1], &y[1]);
+	scanf("%d %d", &x[2], &y[2]);
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = i + 1; j < 3; j++) {
+			if (x[i] == x[j]) {
+				x[i] = 0;
+				x[j] = 0;
+			}
+
+			if (y[i] == y[j]) {
+				y[i] = 0;
+				y[j] = 0;
+			}
+		}
 	}
 
+	for (int i = 0; i < 3; i++) {
+		if (x[i] != 0)
+			x[3] = x[i];
+
+		if (y[i] != 0)
+			y[3] = y[i];
+	}
+
+	
+	printf("%d %d", x[3], y[3]);
 
 }
