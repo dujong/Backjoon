@@ -1,4 +1,8 @@
 ﻿  백준 문제 풀이(재귀).c
-C:\Users\박종두\source\repos\백준 문제 풀이 재귀\백준 문제 풀이 재귀\백준 문제 풀이(재귀).c(13,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\박종두\source\repos\백준 문제 풀이 재귀\백준 문제 풀이 재귀\백준 문제 풀이(재귀).c(42,8): warning C4013: 'memset'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\박종두\source\repos\백준 문제 풀이 재귀\백준 문제 풀이 재귀\백준 문제 풀이(재귀).c(45,6): warning C4013: 'star'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\박종두\source\repos\백준 문제 풀이 재귀\백준 문제 풀이 재귀\백준 문제 풀이(재귀).c(40,1): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message : 'scanf' 선언을 참조하십시오.
+C:\Users\박종두\source\repos\백준 문제 풀이 재귀\백준 문제 풀이 재귀\백준 문제 풀이(재귀).c(61,9): warning C4033: 'star'은(는) 값을 반환해야 합니다.
+C:\Users\박종두\source\repos\백준 문제 풀이 재귀\백준 문제 풀이 재귀\백준 문제 풀이(재귀).c(74): warning C4716: 'star': 값을 반환해야 합니다.
   백준 문제 풀이 재귀.vcxproj -> C:\Users\박종두\source\repos\백준 문제 풀이 재귀\Debug\백준 문제 풀이 재귀.exe

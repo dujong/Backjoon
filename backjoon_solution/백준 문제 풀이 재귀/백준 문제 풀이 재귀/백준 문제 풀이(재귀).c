@@ -5,18 +5,20 @@
  반복문으로 하는것도 되지 않았다!!
  */
 
-int fibo(int n, int* arr);
+//int fibo(int n, int* arr);
+//int star();
+
+char arr[2201][2201];
 
 void main() {
+	// 피보나치 수열 5
 
-	int F, arr[2]= {0,1};
+	/*int F, arr[2]= {0,1};
 	scanf("%d", &F);
 
-	printf("%d", fibo(F,arr));
-}
+	printf("%d", fibo(F,arr));*/
 
-
-int fibo(int n, int* arr) {
+	/*int fibo(int n, int* arr) {
 
 	int result;
 
@@ -32,5 +34,41 @@ int fibo(int n, int* arr) {
 		arr[1] = result;
 	}
 
-	return result;
+	return result;*/
+
+	int N;
+	scanf("%d", &N);
+
+	memset(arr, ' ', sizeof(arr));
+
+
+	star(0,0,N);
+
+
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < N; j++) {
+			printf("%c", arr[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+
+int star(int y, int x, int N) {
+
+	if (N == 1) {
+		arr[y][x] = '*';
+		return;
+	}
+
+	int div = N / 3;
+	int cnt = 0;
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			cnt++;
+			if(cnt != 5)
+				star(y + (i * div), x + (j * div), div);
+		}
+	}
+
 }
