@@ -1,0 +1,71 @@
+.tjfaud {
+    font-size: 20px;
+}
+.rmfTl {
+    font-size: 15px;
+}
+.left {
+    float: left;
+    width:40%;
+    box-sizing: border-box;
+    
+}
+.right {
+    float: right;
+    width:40%;
+    box-sizing: border-box;
+    
+}
+.wpahr {
+    font-size: 1px;
+}
+.parent-1 {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 1px;
+}
+.survays {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+}
+.survaysname1 {
+    flex: 1;
+    width: 30%;
+    box-sizing: border-box;
+}
+.survaysname2 {
+    flex: 1;
+    margin: 0px 20%;
+    width: 30%;
+    box-sizing: border-box;
+}
+.survaysname3 {
+    flex: 1;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.radio-wrap {
+    display: inline;
+   margin: 15px;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(197, 197, 197);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: rgb(185, 192, 255);
+}
+
+

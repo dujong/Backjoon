@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="fruit" value="apple"/>사과
+<input type="radio" name="fruit" value="strawberry"/>딸기
+<input type="radio" name="fruit" value="lemon"/>레몬
+<input type="radio" name="fruit" value="mango"/>망고
+<input type="radio" name="fruit" value="melon"/>메론
+<button onclick="value_check()">체크된 객체 value 가져오기</button>
+ 
+    <script>
+        function value_check() {
+            var check_count = document.getElementsByName("fruit").length;
+    
+            for (var i=0; i<check_count; i++) {
+                if (document.getElementsByName("fruit")[i].checked == true) {
+                    alert(document.getElementsByName("fruit")[i].value);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
