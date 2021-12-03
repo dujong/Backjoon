@@ -8,10 +8,6 @@ for i in price:
     if i > money:
         continue
     
-    print(cnt)
-    print(money)
-    print(i)
-    
     cnt += money // i
     money = money % i
     
